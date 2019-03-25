@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Add job page </title>
+  <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+<form>
+  <h1> add job </h1>
+      <table>
+          <tr>
+              <td>
+              Title of Job:
+              </td>
+              <td>
+              <input type = "text" Title= ""/>
+              </td>
+            </tr>
+            <tr>
+              <td>
+              Start Date:
+              </td>
+              <td>
+              <input type = "month"/>
+              </td>
+            </tr>
+            <tr>
+              <td>
+              Department:
+             </td>
+             <td>
+             <input type = "text" Department= ""/>
+             </td>
+           </tr>
+           <tr>
+             <td>
+              Duration:
+            </td>
+            <td>
+            <input type = "text" Duration= ""/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+           <input type="submit" value="Submit">
+         </td>
+         </tr>
+              </td>
+            </tr>
+        </table>
+</form>
+</body>
+</html>
