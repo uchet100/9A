@@ -1,53 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title> Add job page </title>
-  <link rel="stylesheet" type="text/css" href="form.css">
-</head>
-<body>
-<form>
-  <h1> add job </h1>
-      <table>
-          <tr>
-              <td>
-              Title of Job:
-              </td>
-              <td>
-              <input type = "text" Title= ""/>
-              </td>
-            </tr>
-            <tr>
-              <td>
-              Start Date:
-              </td>
-              <td>
-              <input type = "month"/>
-              </td>
-            </tr>
-            <tr>
-              <td>
-              Department:
-             </td>
-             <td>
-             <input type = "text" Department= ""/>
-             </td>
-           </tr>
-           <tr>
-             <td>
-              Duration:
-            </td>
-            <td>
-            <input type = "text" Duration= ""/>
-            </td>
-          </tr>
-          <tr>
-            <td>
-           <input type="submit" value="Submit">
-         </td>
-         </tr>
-              </td>
-            </tr>
-        </table>
-</form>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+
+  <script src="javascript/script.js"></script>
+
+<div class="logo">
+  <a href="index.html"><embed id="logo" src="images/logo9a.png"/></a>
+</div>
+
+ <!-- Nav bar -->
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="jobs.html">Jobs</a>
+  <a href="pay.html">Pay</a>
+</div>
+
+<div id="content-test">
+   <form>
+     <input id="item" type="text" placeholder="New Job" required />
+   </form>
+
+   <h2>Job List</h2>
+   <ul></ul>
+
+   <button>Clear All</button>
+</div>
+
+<div class="footer">
+  <p>9A Group - Univeristy of Portsmouth ©2019</p>
+</div>
+
+<script src="js/scripts.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+    $(function(){
+        $('a').each(function(){
+            if ($(this).prop('href') == window.location.href) {
+                $(this).addClass('active'); $(this).parents('li').addClass('active');
+            }
+        });
+    });
+</script>
+  </body>
 </html>
