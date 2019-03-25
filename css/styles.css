@@ -1,0 +1,71 @@
+body {
+  background: #cce6ff;
+  margin: 0;
+}
+
+
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+    background-color: #3399ff;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+    float: none;
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display:inline-block;
+    /*background-color: #ddd;*/
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+    background-color:#80bfff;
+    color: white;
+}
+
+/* Change the color of links on active */
+.navbar .active{
+    background-color:#80bfff;
+    color: white;
+}
+#logo {
+  padding-top: 0;
+  background-color: #80bfff;
+  max-width: 45%;
+  max-height: 10%
+}
+
+.logo {
+  padding-top: 0;
+  background-color: #80bfff;
+}
+
+/* footer */
+.footer {
+    position: fixed;
+    height: 50px;
+    background-color: #3399ff;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+/* content test js css html */
+#content-test {
+  padding-top: 10%;
+  text-align: center;
+  }
