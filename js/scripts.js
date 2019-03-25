@@ -35,3 +35,17 @@ button.addEventListener('click', function() {
     ul.removeChild(ul.firstChild)
   }
 })
+
+
+// small test for calculating input values
+//needs the local storage scripts to be adapted and keep the calculated results in a list
+//proper tax calculation needs to be implemented to page-script
+function pr() {
+  var value1 =  document.getElementById('value1').value;
+  var value2 =  document.getElementById('value2').value;
+  var result = parseFloat(value1)+parseFloat(value2);
+
+  if(!isNaN(result)){
+    document.getElementById("result").innerHTML = result;
+    }
+  }
