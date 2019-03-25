@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+
+  <script src="javascript/script.js"></script>
+
+<div class="logo">
+  <a href="index.html"><embed id="logo" src="images/logo9a.png"/></a>
+</div>
+
+ <!-- Nav bar -->
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="jobs.html">Jobs</a>
+  <a href="pay.html">Pay</a>
+</div>
+
+<div id="content-test">
+   <form>
+     <input id="item" type="text" placeholder="New Job" required />
+     <input id="item" type="month" placeholder="Start Date" required/>
+     <input id="item" type="text" placeholder="Department" required/>
+     <input id="item" type="text" placeholder="Duration"required/>
+    
+
+   </form>
+
+   <h2>Job List</h2>
+   <ul></ul>
+
+   <button>Clear All</button>
+   <button> Submit</button>
+</div>
+
+<div class="footer">
+  <p>9A Group - Univeristy of Portsmouth ©2019</p>
+</div>
+
+<script src="js/scripts.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+    $(function(){
+        $('a').each(function(){
+            if ($(this).prop('href') == window.location.href) {
+                $(this).addClass('active'); $(this).parents('li').addClass('active');
+            }
+        });
+    });
+</script>
+  </body>
+</html>

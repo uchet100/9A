@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <script src="js/scripts.js"></script>
+
+  <body>
+
+  <script src="javascript/script.js"></script>
+
+<div class="logo">
+  <a href="index.html"><embed id="logo" src="images/logo9a.png"/></a>
+</div>
+
+ <!-- Nav bar -->
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="jobs.html">Jobs</a>
+  <a href="pay.html">Pay</a>
+</div>
+     <div id="content-test">
+        <form action="PayslipServlet" method="get" name="calculate">
+          <input type="text" name="pay" placeholder="Salary Rate"><br/>
+          <input type="text" name="hour" placeholder="Hour Worked"><br/>
+          <input type="button" name="submit" value="Submit" onClick="process()"><br/>
+          <input type="text" name="salary" placeholder="Total Amount Paid"><br/>
+   </form>
+</div>
+<section>
+  <section id = "jobOutput">
+<section/>
+
+
+<div class="footer">
+  <p>9A Group - Univeristy of Portsmouth ©2019</p>
+</div>
+
+<script src="js/scripts.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+    $(function(){
+        $('a').each(function(){
+            if ($(this).prop('href') == window.location.href) {
+                $(this).addClass('active'); $(this).parents('li').addClass('active');
+            }
+        });
+    });
+</script>
+
+  </body>
+</html>
