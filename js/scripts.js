@@ -51,11 +51,9 @@ function process() {
   var salaryVar = payVar * hourVar
   document.calculate.salary.value = salaryVar;
 
-
   if(!isNaN(result)){
     document.getElementById("result").innerHTML = result;
     }
-
 
 
 
