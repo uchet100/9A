@@ -41,10 +41,10 @@ button.addEventListener('click', function() {
 //needs the local storage scripts to be adapted and keep the calculated results in a list
 //proper tax calculation needs to be implemented to page-script
 function submit(){
-  var submit = document.getElementsByName('submit');
-  submit.addEventListener("onClick",process,false);
+ var submit = document.getElementsByName('submit');
+ submit.addEventListener("onClick",process,false);
 }
-
+//The tax amount percentage is made up just for testing
 function process() {
   var payVar= parseFloat(document.calculate.pay.value)
   var hourVar = parseFloat(document.calculate.hour.value)
