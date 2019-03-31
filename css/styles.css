@@ -71,13 +71,14 @@ body {
   }
 
 /* Sign in */
-#login
+#signup
 {
   position: relative;
   margin: 5% auto;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 35%;
+  /* margin-right: 10%; */
   height: 400px;
+  width: 350px;
   background: #dbedfd;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
@@ -124,7 +125,7 @@ input[type="submit"]{
   font-weight: 500;
   text-transform: uppercase;
   /*transition: wdith 2s;*/
-  margin-left: 40%;
+  margin-left: 0%;
 }
 
 input[type="submit"]:hover{
@@ -135,13 +136,63 @@ input[type="submit"]:hover{
 
 .loginBox{
   position: absolute;
-  top: 0;
+  /*top: 0;*/
   right: 0;
   box-sizing: boarder-box;
   padding: 40px;
   width: 300px;
   height: 400px;
+  
 }
+
+#login
+{
+  position: relative;
+  margin: 5% auto;
+  margin-left: 35%;
+  /* margin-right: 10%; */
+  height: 300px;
+  width: 350px;
+  background: #dbedfd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+button{
+  width: 120px;
+  height: 32px;
+  background: none;
+  border: none;
+  color: grey;
+  font-family: sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  /*transition: wdith 2s;*/
+  
+}
+
+button:hover{
+  background: #3399ff;
+  color: white;
+  transition: 1.2s ease;
+}
+
+@media (max-width: 768px){
+  body{
+    width:740px;
+    margin: 0 auto;
+  }
+  article#login {
+      display: flex;
+      background-color: darkgreen;
+  }
+/*   article#login>section{
+    display: block; */
+  }
+  article{
+    float: none;
+  }
+}
+
 
 
 
