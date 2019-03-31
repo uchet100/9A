@@ -74,13 +74,13 @@ body {
 #signup
 {
   position: fixed;
-  top: 45%;
+  top: 50%;
   left: 52%;
   margin-top: -100px;
   margin-left: -200px;
   /* margin-right: 10%; */
   height: 400px;
-  width: 350px;
+  width: 300px;
   background: #dbedfd;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
@@ -92,7 +92,7 @@ body {
   box-sizing: boarder-box;
   padding: 40px;
   width: 300px;
-  height: 400px;
+  height: 325px;
 }
 
 .loginHeader {
@@ -158,7 +158,7 @@ input[type="submit"]:hover{
   /* margin-left: 35%; */
   /* margin-right: 10%; */
   height: 300px;
-  width: 350px;
+  width: 300px;
   background: #dbedfd;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
