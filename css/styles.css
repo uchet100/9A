@@ -73,9 +73,11 @@ body {
 /* Sign in */
 #signup
 {
-  position: relative;
-  margin: 5% auto;
-  margin-left: 35%;
+  position: fixed;
+  top: 45%;
+  left: 52%;
+  margin-top: -100px;
+  margin-left: -200px;
   /* margin-right: 10%; */
   height: 400px;
   width: 350px;
@@ -147,9 +149,13 @@ input[type="submit"]:hover{
 
 #login
 {
-  position: relative;
-  margin: 5% auto;
-  margin-left: 35%;
+  position: fixed;
+  top: 50%;
+  left: 52%;
+  margin-top: -100px;
+  margin-left: -200px;
+  /* margin: 5% auto; */
+  /* margin-left: 35%; */
   /* margin-right: 10%; */
   height: 300px;
   width: 350px;
@@ -178,19 +184,9 @@ button:hover{
 
 @media (max-width: 768px){
   body{
-    width:740px;
-    margin: 0 auto;
+    overflow: hidden;
   }
-  article#login {
-      display: flex;
-      background-color: darkgreen;
-  }
-/*   article#login>section{
-    display: block; */
-  }
-  article{
-    float: none;
-  }
+
 }
 
 
