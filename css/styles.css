@@ -136,6 +136,26 @@ input[type="submit"]:hover{
   transition: 1.2s ease;
 }
 
+
+input[name="submit"]{
+  width: 120px;
+  height: 32px;
+  background: none;
+  border: none;
+  color: grey;
+  font-family: sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  /*transition: wdith 2s;*/
+  margin-left: 0%;
+}
+
+input[name="submit"]:hover{
+  background: #3399ff;
+  color: white;
+  transition: 1.2s ease;
+}
+
 .loginBox{
   position: absolute;
   /*top: 0;*/
@@ -144,7 +164,7 @@ input[type="submit"]:hover{
   padding: 40px;
   width: 300px;
   height: 400px;
-  
+
 }
 
 #login
@@ -173,7 +193,7 @@ button{
   font-weight: 500;
   text-transform: uppercase;
   /*transition: wdith 2s;*/
-  
+
 }
 
 button:hover{
@@ -188,7 +208,3 @@ button:hover{
   }
 
 }
-
-
-
-
