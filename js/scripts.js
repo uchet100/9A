@@ -65,10 +65,13 @@ function process() {
   document.calculate.taxes.value = taxesVar;
   var netPayVar = salaryVar - taxesVar
   document.calculate.income.value = netPayVar;
-  
+
+
 
   if(!isNaN(result)){
     document.getElementById("result").innerHTML = result;
     }
 
   }
+
+  
