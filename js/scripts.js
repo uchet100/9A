@@ -52,6 +52,12 @@ function submit(){
   submit.addEventListener("onClick",process,false);
 
 
+
+}
+
+function clear(){
+  var clear = document.getElementsByName()
+
 }
 
 
@@ -61,24 +67,24 @@ function process() {
   var taxVar = parseFloat(document.calculate.tax.value)
   var salaryVar = payVar * hourVar
   document.calculate.salary.value = salaryVar;
-  //setting the key (like an id for the value in local storage to be salaryVarItem) 
+  //setting the key (like an id for the value in local storage to be salaryVarItem)
   //parse it to string and save the value
   localStorage.setItem('salaryVarItem', JSON.stringify(salaryVar));
-  
-  //to retrive the data and then print it out in page 
+
+  //to retrive the data and then print it out in page
   //code commented out to allow whoever is dealing with the page to place it where needed
-  //JSON.parse used to reconvert the string in usable data 
+  //JSON.parse used to reconvert the string in usable data
   //var salaryVar = JSON.parse(localStorage.getItem('myCsalaryVarItemat'));
-  
-  
+
+
   var taxesVar = (salaryVar * taxVar)/100
   document.calculate.taxes.value = taxesVar;
   var netPayVar = salaryVar - taxesVar
   document.calculate.income.value = netPayVar;
-  
+
 
   if(!isNaN(result)){
-    document.getElementById("result").innerHTML = result;
+    document.getElementsByName("result").innerHTML = result;
     }
 
   }
