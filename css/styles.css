@@ -208,3 +208,31 @@ button:hover{
   }
 
 }
+#Home {
+  position: relative;
+  left: 29.35%;
+  height: 175px;
+  width: 275px;
+}
+
+#About {
+  position: relative;
+  bottom: 180px;
+  left: 51%;
+  height: 175px;
+  width: 275px;
+}
+#Sign {
+  position: relative;
+  bottom: 170px;
+  left: 51%;
+  height: 175px;
+  width: 275px;
+}
+#Log {
+  position: relative;
+  Bottom: 350px;
+  left: 29.35%;
+  height: 175px;
+  width: 275px;
+}
