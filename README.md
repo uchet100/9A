@@ -22,7 +22,7 @@ The current repository contains all the files which allow the product to work.
 -- Running 9Accountant --
 To be able to look at product functionality it is required to download the repository and open index.html (Site Home Page) in a browser.
 This is the link to a video which shows the current functionality (based on the code in this repository):
-<!-- put link to video here -->
+https://www.youtube.com/watch?v=xjdVbMYpkEY&feature=youtu.be
 DISCLAIMER: Further implementation requires teams investments for a server hosting servirce and the registration of a Site Domain, allowing the public usage of the product.
 
 -- Current Features --
