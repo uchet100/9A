@@ -36,12 +36,12 @@
 
 
 <article id="signup">
-  <section class="signUpBox">    
+  <section class="signUpBox">
     <p class="loginHeader">Sign Up</p>
-    <input type="text" name="username" placeholder="Username"/>
-    <input type="password" name="password" placeholder="Password"/>
-    <input type="submit" name="signup-button" value="Sign Up"/>
-    <a href="login.html"><button type="button">Sign in -></button></a>
+    <input type="text" id="username" placeholder="Username"/>
+    <input type="text" id="password" placeholder="Password"/>
+    <button type="button" id="signUp">Sign up</button>
+     <a href="login.html"><button type="button">Sign in -></button></a>
   </section>
 <!--   <section class="loginBox">
       <p class="loginHeader">Login</p>
@@ -68,6 +68,24 @@
             }
         });
     });
+  
+    const username = document.getElementById("username");
+    const password = document.getElementById("password");
+    const signUp = document.getElementById("signUp");
+
+    signUp.onclick = function () {
+      const usernameLogin = username.value;
+      const passwordLogin = password.value;
+
+      console.log(usernameLogin);
+      console.log(passwordLogin);
+
+      if (usernameLogin && passwordLogin) {
+        localStorage.setItem("name", usernameLogin);
+        localStorage.setItem("password", passwordLogin);
+        location.reload();
+      }
+    };
 </script>
 
   </body>
