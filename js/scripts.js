@@ -62,20 +62,6 @@ function clear(){
 function rest(){
   document.getElementById("output").reset();
   document.calculate.total.value = localStorage.getItem('netVarItem');
- //bookmarkMath();
-
-}
-
-
-
-
-function bookmarkMath() {
-
-  var newtotalVar = parseFloat(document.calculate.income.value)
-  var oldValueVar = parseFloat(document.calculate.total.value)
-  var sumVar = newtotalVar += oldValueVar;
-  document.calculate.total.value = sumVar;
-  console.log(sumVar);
 
 
 }
@@ -96,10 +82,5 @@ function process() {
    localStorage.setItem('netVarItem', myJSON);
    var totalVar = localStorage.getItem('netVarItem');
    console.log(localStorage);
-
-  // bookmarkMath();
-
-
-
-
+   document.calculate.total.value = localStorage.getItem('netVarItem');
   }
