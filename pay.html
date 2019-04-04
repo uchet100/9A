@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Pay</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favUp.png">
   </head>
 
   <script src="js/scripts.js"></script>
@@ -23,20 +24,20 @@
   <a href="signup.html">Sign Up</a>
   <a href="jobs.html">Jobs</a>
   <a href="pay.html">Pay</a>
-  <a href="about.html">About</a>
 </div>
      <div id="content-test" name = "result">
 
         <form  id="output"  action="Payslip" method="get" name="calculate">
           <input type="text"  name="pay" placeholder="Salary Rate"><br/>
-          <input type="text" name="hour" placeholder="Hour Worked"><br/>
+          <input type="text" id="hour" name="hour" placeholder="Hour Worked"><br/>
           <input type ="text" name ="tax" placeholder="Tax Group"><br/>
           <input type="button" name="submit" value="Submit" onClick="process()"> <br/>
           <input type="text" name="salary" placeholder="Gross Pay" readonly><br/>
           <input type ="text" name= "taxes" placeholder="Tax Owned" readonly><br/>
-          <input type ="text" name= "income" placeholder="Net Pay" readonly><br/>
+          <input type ="text" id="final" name= "income" placeholder="Net Pay" readonly><br/>
           <input type ="text" id="total" name= "total" placeholder="Total" readonly><br/>
-          <input type="reset" value="Reset">
+          <input type ="text" id="li" name= "newincome" placeholder="after" readonly><br/>
+          <input type="button" name="clear" value="Reset" onClick="rest()">
 
    </form>
 

@@ -53,9 +53,46 @@ function submit(){
 
 }
 
+function clear(){
+  var reset = document.getElementsByName('clear');
+  reset.addEventListener("onClick",rest,false);
+
+}
+
+function rest(){
+  document.getElementById("output").reset();
+  document.calculate.total.value = localStorage.getItem('netVarItem');
 
 
+}
 
+// function countIncome(){
+//   if (localStorage.getItem('netVarItem') === null) {
+//        localStorage.setItem('netVarItem', myJSON);
+//  }
+// else {
+//      var totalVar = localStorage.getItem('netVarItem'),netPayVar);
+//      var temp_hours1 = totalVar + myJSON;
+//      alert(temp_hours1);
+//      localStorage.setItem('netVarItem', JSON.stringify(temp_hours1));
+//  }
+
+
+function bookmarkMath() {
+  // var newtotalVar = parseFloat(document.calculate.income.value)
+  // var oldValueVar = parseFloat(document.calculate.total.value)
+  // var sumVar = newtotalVar += oldValueVar
+  // document.calculate.newincome.value = sumVar;
+  // console.log(sumVar);
+
+  var newtotalVar = parseFloat(document.calculate.total.value)
+  var oldValueVar =parseFloat(document.calculate.income.value)
+  var sumVar = newtotalVar += oldValueVar
+  document.calculate.newincome.value = sumVar;
+  console.log(sumVar);
+
+
+}
 
 function process() {
   var payVar= parseFloat(document.calculate.pay.value)
@@ -80,15 +117,34 @@ function process() {
   // var totalVar = localStorage.getItem('salaryVarItem');
   // document.getElementsByName("total").innerHTML = totalVar;
 
-
-
    let myTotal = netPayVar;
    myJSON = JSON.stringify(myTotal);
    // localStorage.setItem('salaryVarItem', JSON.stringify(salaryVar));
    localStorage.setItem('netVarItem', myJSON);
    var totalVar = localStorage.getItem('netVarItem');
-   
+   console.log(localStorage);
 
-   document.calculate.total.value = netPayVar;
+   document.calculate.total.value = totalVar;
+   // document.calculate.total.value = netPayVar;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ bookmarkMath();
+
+ rest();
+
 
   }

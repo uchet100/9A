@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Home Page</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favUp.png">
   </head>
 
   <body>
@@ -19,7 +20,6 @@
 <div class="navbar">
     <a href="index.html">Home</a>
     <a href="signup.html">Sign Up</a>
-    <a href="about.html">About</a>
 </div>
 
 
@@ -37,12 +37,12 @@
 
 
 <article id="signup">
-  <section class="signUpBox">    
+  <section class="signUpBox">
     <p class="loginHeader">Sign Up</p>
-    <input type="text" name="username" placeholder="Username"/>
-    <input type="password" name="password" placeholder="Password"/>
-    <input type="submit" name="signup-button" value="Sign Up"/>
-    <a href="login.html"><button type="button">Sign in -></button></a>
+    <input type="text" id="username" placeholder="Username"/>
+    <input type="text" id="password" placeholder="Password"/>
+    <button type="button" id="signUp">Sign up</button>
+     <a href="login.html"><button type="button">Sign in -></button></a>
   </section>
 <!--   <section class="loginBox">
       <p class="loginHeader">Login</p>
@@ -69,6 +69,24 @@
             }
         });
     });
+  
+    const username = document.getElementById("username");
+    const password = document.getElementById("password");
+    const signUp = document.getElementById("signUp");
+// function to store the username and password in to local memory
+    signUp.onclick = function () {
+      const usernameLogin = username.value;
+      const passwordLogin = password.value;
+
+      console.log(usernameLogin);
+      console.log(passwordLogin);
+
+      if (usernameLogin && passwordLogin) {
+        localStorage.setItem("name", usernameLogin);
+        localStorage.setItem("password", passwordLogin);
+        location.reload();
+      }
+    };
 </script>
 
   </body>
