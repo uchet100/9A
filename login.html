@@ -41,11 +41,11 @@
 
 
 <article id="login">
-  <section class="signUpBox">    
+  <section class="signUpBox">
     <p class="loginHeader">Login</p>
-    <input type="text" name="username" placeholder="Username"/>
-    <input type="password" name="password" placeholder="Password"/>
-    <a href="userdashboard.html"><button type="button">Sign in</button></a>
+    <input type="text" id="username2" placeholder="Username"/>
+    <input type="text" id="password2" placeholder="Password"/>
+    <button type="button" id="signIn">Sign In</button>
   </section>
 <!--   <section class="loginBox">
       <p class="loginHeader">Login</p>
@@ -72,6 +72,23 @@
             }
         });
     });
+  
+  const username2 = document.getElementById("username2");
+    const password2 = document.getElementById("password2");
+    const signIn = document.getElementById("signIn");
+
+    signIn.onclick = function () {
+      const usernameLogin2 = username2.value;
+      const passwordLogin2 = password2.value;
+
+      if (username2.value == localStorage.getItem("name") && password2.value == localStorage.getItem("password")) {
+        console.log("Login details correct");
+        window.location.href = "jobs.html";
+
+      } else {
+        console.log("Login details incorrect");
+      }
+    };
 </script>
 
   </body>
