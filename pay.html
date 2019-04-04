@@ -29,14 +29,15 @@
 
         <form  id="output"  action="Payslip" method="get" name="calculate">
           <input type="text"  name="pay" placeholder="Salary Rate"><br/>
-          <input type="text" name="hour" placeholder="Hour Worked"><br/>
+          <input type="text" id="hour" name="hour" placeholder="Hour Worked"><br/>
           <input type ="text" name ="tax" placeholder="Tax Group"><br/>
           <input type="button" name="submit" value="Submit" onClick="process()"> <br/>
           <input type="text" name="salary" placeholder="Gross Pay" readonly><br/>
           <input type ="text" name= "taxes" placeholder="Tax Owned" readonly><br/>
-          <input type ="text" name= "income" placeholder="Net Pay" readonly><br/>
+          <input type ="text" id="final" name= "income" placeholder="Net Pay" readonly><br/>
           <input type ="text" id="total" name= "total" placeholder="Total" readonly><br/>
-          <input type="reset" value="Reset">
+          <input type ="text" id="li" name= "newincome" placeholder="after" readonly><br/>
+          <input type="button" name="clear" value="Reset" onClick="rest()">
 
    </form>
 
