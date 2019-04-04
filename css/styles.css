@@ -208,3 +208,7 @@ button:hover{
   }
 
 }
+#Video {
+    position: relative;
+    left: 30%;
+}
