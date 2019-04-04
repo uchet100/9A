@@ -66,16 +66,7 @@ function rest(){
 
 }
 
-// function countIncome(){
-//   if (localStorage.getItem('netVarItem') === null) {
-//        localStorage.setItem('netVarItem', myJSON);
-//  }
-// else {
-//      var totalVar = localStorage.getItem('netVarItem'),netPayVar);
-//      var temp_hours1 = totalVar + myJSON;
-//      alert(temp_hours1);
-//      localStorage.setItem('netVarItem', JSON.stringify(temp_hours1));
-//  }
+
 
 
 function bookmarkMath() {
@@ -100,22 +91,11 @@ function process() {
   var taxVar = parseFloat(document.calculate.tax.value)
   var salaryVar = payVar * hourVar
   document.calculate.salary.value = salaryVar;
-  //setting the key (like an id for the value in local storage to be salaryVarItem)
-  //parse it to string and save the value
-
-
-  //to retrive the data and then print it out in page
-  //code commented out to allow whoever is dealing with the page to place it where needed
-  //JSON.parse used to reconvert the string in usable data
-
-
   var taxesVar = (salaryVar * taxVar)/100
   document.calculate.taxes.value = taxesVar;
   var netPayVar = salaryVar - taxesVar
   document.calculate.income.value = netPayVar;
-  // localStorage.setItem('salaryVarItem', JSON.stringify(salaryVar));
-  // var totalVar = localStorage.getItem('salaryVarItem');
-  // document.getElementsByName("total").innerHTML = totalVar;
+
 
    let myTotal = netPayVar;
    myJSON = JSON.stringify(myTotal);
@@ -125,7 +105,7 @@ function process() {
    console.log(localStorage);
 
    document.calculate.total.value = totalVar;
-   // document.calculate.total.value = netPayVar;
+
 
 
 
@@ -144,7 +124,7 @@ function process() {
 
  bookmarkMath();
 
- rest();
+
 
 
   }
