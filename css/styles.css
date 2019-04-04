@@ -155,6 +155,31 @@ input[name="submit"]:hover{
   color: white;
   transition: 1.2s ease;
 }
+input[type="Reset"]:hover{
+  background: #3399ff;
+  color: white;
+  transition: 1.2s ease;
+}
+
+
+input[name="clear"]{
+  width: 120px;
+  height: 32px;
+  background: none;
+  border: none;
+  color: grey;
+  font-family: sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  /*transition: wdith 2s;*/
+  margin-left: 0%;
+}
+
+input[name="clear"]:hover{
+  background: #3399ff;
+  color: white;
+  transition: 1.2s ease;
+}
 
 .loginBox{
   position: absolute;
@@ -235,4 +260,9 @@ button:hover{
   left: 29.35%;
   height: 175px;
   width: 275px;
+}
+
+  .video {
+    padding-top: 20px;
+    text-align: center;
 }
