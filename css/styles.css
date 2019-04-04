@@ -233,7 +233,7 @@ button:hover{
   }
 
 }
-#Video {
-    position: center;
+.video {
     padding-top: 20px;
+    text-align: center;
 }
