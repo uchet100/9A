@@ -234,6 +234,6 @@ button:hover{
 
 }
 #Video {
-    position: relative;
-    left: 30%;
+    position: center;
+    padding-top: 20px;
 }
