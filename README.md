@@ -21,16 +21,16 @@ The current repository contains all the files which allow the product to work.
 
 -- Running 9Accountant --
 To be able to look at product functionality it is required to download the repository and open index.html (Site Home Page) in a browser.
-This is a LINK to a VIDEO which shows the current functionality (based on the code in this repository):
+This is the link to a video which shows the current functionality (based on the code in this repository):
 <!-- put link to video here -->
 DISCLAIMER: Further implementation requires teams investments for a server hosting servirce and the registration of a Site Domain, allowing the public usage of the product.
 
 -- Current Features --
 SIGN UP AND SIGN IN: Usual user subscription features which allow the client to create and account that allows access to the product's features. Without the user being signed in the features of the product will not be accessible (only non-user-linked pages will be accessible)
 
-ADD JOBS: The user can make a list of his/her current jobs and write down any informations linked to it. The jobs and informations will be displayed in a list right below the input box (the output information is permanently stored).
+ADD JOBS: The user can make a list of his/her current jobs and write down any informations linked to it. The jobs and informations will be displayed right below the input box (the output information is permanently stored).
 
-CALCULATE PAY: The user can calculate his/her pay (including taxes in the calulation) and the output information will be shown right below the input boxes (the output information is permanently stored).
+CALCULATE PAY: The user can calculate his/her pay based on Salary Rate, Hours of work and Tax group and get several outputs sucj as: Gross pay, Taxes owed, Net pay and Total earnings; And the output informations will be shown right below the input boxes (the output information is permanently stored).
 
 --Future Features Example--
 IMPLEMENTATION OF GOOGLE CALENDAR: One possible future feature is the implementation of a calendar (probably by using Google API) to allow the user to insert working days and hours. The 9Accountant product will then communicate with Google API to allow even more personalization to the jobs info in the calendar (calulating pay and checking if the user's jobs list contains all the jobs that the calendar has scheduled) 
