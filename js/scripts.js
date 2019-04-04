@@ -62,7 +62,7 @@ function clear(){
 function rest(){
   document.getElementById("output").reset();
   document.calculate.total.value = localStorage.getItem('netVarItem');
-
+ //bookmarkMath();
 
 }
 
@@ -70,16 +70,11 @@ function rest(){
 
 
 function bookmarkMath() {
-  // var newtotalVar = parseFloat(document.calculate.income.value)
-  // var oldValueVar = parseFloat(document.calculate.total.value)
-  // var sumVar = newtotalVar += oldValueVar
-  // document.calculate.newincome.value = sumVar;
-  // console.log(sumVar);
 
-  var newtotalVar = parseFloat(document.calculate.total.value)
-  var oldValueVar =parseFloat(document.calculate.income.value)
-  var sumVar = newtotalVar += oldValueVar
-  document.calculate.newincome.value = sumVar;
+  var newtotalVar = parseFloat(document.calculate.income.value)
+  var oldValueVar = parseFloat(document.calculate.total.value)
+  var sumVar = newtotalVar += oldValueVar;
+  document.calculate.total.value = sumVar;
   console.log(sumVar);
 
 
@@ -96,33 +91,13 @@ function process() {
   var netPayVar = salaryVar - taxesVar
   document.calculate.income.value = netPayVar;
 
-
    let myTotal = netPayVar;
    myJSON = JSON.stringify(myTotal);
-   // localStorage.setItem('salaryVarItem', JSON.stringify(salaryVar));
    localStorage.setItem('netVarItem', myJSON);
    var totalVar = localStorage.getItem('netVarItem');
    console.log(localStorage);
 
-   document.calculate.total.value = totalVar;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- bookmarkMath();
+  // bookmarkMath();
 
 
 
