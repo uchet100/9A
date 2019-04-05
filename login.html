@@ -1,83 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="images/favUp.png">
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favUp.png">
+</head>
 
+<body>
+<div class = "content">
   <script src="javascript/script.js"></script>
 
-<div class="logo">
-  <a href="index.html"><embed id="logo" src="images/logo9a.png"/></a>
-</div>
+  <div class="logo">
+    <a href="index.html"><embed id="logo" src="images/logo9a.png" /></a>
+  </div>
 
- <!-- Nav bar -->
-<div class="navbar">
+  <!-- Nav bar -->
+  <div class="navbar">
     <a href="index.html">Home</a>
     <a href="signup.html">Sign Up</a>
     <a href="jobs.html">Jobs</a>
 
-</div>
+  </div>
 
 
-<!-- <p>Register</p>
-<label for="email"><b>Email: </b></label>
-  <input type="text" placeholder="Enter Email" name="email" required>
-
-<label for="psw"><b>Password: </b></label>
-  <input type="password" placeholder="Enter Password" name="psw" required>
-
-<label for="psw-repeat"><b>Repeat Password: </b></label>
-  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
-<label>
-  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-</label> -->
-
-
-
-<article id="login">
-  <section class="signUpBox">
-    <p class="loginHeader">Login</p>
-    <input type="text" id="username2" placeholder="Username"/>
-    <input type="text" id="password2" placeholder="Password"/>
-    <button type="button" id="signIn">Sign In</button>
-  </section>
-<!--   <section class="loginBox">
+<!-- Where user can login to thh site -->
+  <article id="login">
+    <section class="signUpBox">
       <p class="loginHeader">Login</p>
-      <input type="text" name="username" placeholder="Username"/>
-      <input type="password" name="password" placeholder="Password"/>
-      <input type="submit" name="signup-button" value="Login"/>
-  </section> -->
-</article>
+      <input type="text" id="username2" placeholder="Username" />
+      <input type="text" id="password2" placeholder="Password" />
+      <button type="button" id="signIn">Sign In</button>
+    </section>
+  </article>
 
 
 
-
-
-<div class="footer">
-  <p>9A Group - Univeristy of Portsmouth ©2019</p>
 </div>
 
-<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script>
-    $(function(){
-        $('a').each(function(){
-            if ($(this).prop('href') == window.location.href) {
-                $(this).addClass('active'); $(this).parents('li').addClass('active');
-            }
-        });
+  <div class="footer">
+    <p>9A Group - Univeristy of Portsmouth ©2019</p>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>
+    $(function () {
+      $('a').each(function () {
+        if ($(this).prop('href') == window.location.href) {
+          $(this).addClass('active');
+          $(this).parents('li').addClass('active');
+        }
+      });
     });
-  
-  const username2 = document.getElementById("username2");
+
+    const username2 = document.getElementById("username2");
     const password2 = document.getElementById("password2");
     const signIn = document.getElementById("signIn");
-// function to check that the username and password are the same as the ones stored in local memory
+    // function to check that the username and password are the same as the ones stored in local memory
     signIn.onclick = function () {
       const usernameLogin2 = username2.value;
       const passwordLogin2 = password2.value;
@@ -90,7 +71,8 @@
         console.log("Login details incorrect");
       }
     };
-</script>
+  </script>
 
-  </body>
+</body>
+
 </html>
